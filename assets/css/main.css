@@ -33,6 +33,16 @@ Table of contents
 /*=============================
 	Typography css start
 ===============================*/
+
+.image-tournante {
+  animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 body {
   font-family: var(--tc-body-font-family);
   font-size: var(--tc-body-font-size);
