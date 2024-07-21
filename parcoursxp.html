@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Parcours et Experience</title>
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/MNLogo.svg" />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/boxicons/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/brands.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/solid.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body class="magic-cursor position-relative">
+    <div class="follower">
+    </div>
+    <div class="cursor">
+        <span class="dot"></span>
+    </div> <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="rays justify-content-center align-items-center d-flex"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg py-0 z-5 tcmenu__wrap">
+            <div class="d-flex p-4 p-lg-0 custom-container mx-auto justify-content-between align-items-center w-100">
+                <a class="navbar-brand fw-bold" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="bi bi-list text-primary"></i>
+                    Menu
+                </a>
+                <div class="tcmenu__navbar-wrap tcmenu__main-menu d-none d-lg-flex">
+                    <ul class="navbar-nav mx-auto gap-4 align-items-lg-center navigation">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="index.html" >À propos de moi</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="parcoursxp.html" >Parcours & XP</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="navbar-brand ms-lg-4 d-flex main-logo" href="index.html">
+                                <img src="assets/imgs/logo/MNLogo.svg" alt="mustafaa" />
+                                <span class="text-dark"></span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item dropdown menu-item-has-children">
+                            <a class="nav-link" href="projets.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">Projets</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="details-projet.html">Détails projet</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="details-projet.html">Détails projet</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item" >
+                            <a class="nav-link" href="projets.html" >Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center me-lg-4 gap-4">
+                    <div class="dark-light-switcher d-flex justify-content-center align-items-center">
+                        <i class="bi theme-icon bi-sun-fill"></i>
+                        <i class="bi theme-icon bi-moon-stars-fill"></i>
+                    </div>
+
+                    <!--Mobile-->
+                    <div class="mobile-nav-toggler  d-lg-none rounded-circle bg-primary icon-shape icon-lg">
+                        <img src="assets/imgs/icon/dot-menu.png" alt="mustafaa" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- prettier-ignore -->
+        <!-- Mobile Menu  -->
+        <div class="tcmobile__menu">
+            <nav class="tcmobile__menu-box">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="nav-logo">
+                    <a class="navbar-brand ms-lg-4 d-flex main-logo" href="index.html">
+                        <img src="assets/imgs/logo/MNLogo.svg" alt="mustafaa" />
+                        <span class="text-dark">Mustafaa</span>
+                    </a>
+                </div>
+                <div class="tcmobile__search">
+                    <form action="#">
+                        <input type="text" class="form-control shadow-none" placeholder="Recherchez ici..." />
+                        <button><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+                <div class="tcmobile__menu-outer"></div>
+
+                <div class="side-gallery mb-4 ps-4">
+                    <div class="pt-1"></div>
+                    <h4 class="mt-3 mb-3">Galerie</h4>
+                    <div class="grid-items">
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-1.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-2.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-3.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-4.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-5.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-6.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-7.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-8.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-9.png" alt="mustafaa" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tcmobile__menu-bottom">
+                    <div class="contact-info">
+                        <ul class="list-wrap list-unstyled">
+                            <li><a href="mailto:moustaphand1502@gmail.com">moustaphand1502@gmail.com</a></li>
+                            <li><a href="tel:00221778860293">+221 77 886 02 93</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <ul class="list-wrap">
+                            <li>
+                                <a href="https://twitter.com/" class=" text-reset">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class=" text-reset">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" class=" text-reset">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="tcmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu -->
+        <!-- Offcanvas menu -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+            <div class="offcanvas-header">
+                <div class="offcanvas-close">
+                    <button class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offCanvas__logo mb-3">
+                    <a class="navbar-brand ms-lg-4 d-flex main-logo me-8" href="index.html">
+                        <img src="assets/imgs/logo/MNLogo.svg" alt="mustafaa" />
+                        <span class="text-dark">Mustafaa</span>
+                    </a>
+                </div>
+                <div class="offCanvas__side-info mb-4">
+                    <!-- <div class="contact-list mb-4">
+                        <h4>Office Address</h4>
+                        <p>
+                            123/A, Miranda City Likaoli <br />
+                            Prikano, Dope
+                        </p>
+                    </div> -->
+                    <div class="contact-list mb-4">
+                        <h4>Téléphone</h4>
+                        <p>+221 77 886 02 93</p>
+                    </div>
+                    <div class="contact-list mb-4">
+                        <h4>Adresse Mail</h4>
+                        <p>moustaphand1502@gmail.com</p>
+                    </div>
+                </div>
+                <div class="side-gallery mb-4">
+                    <div class="pt-1"></div>
+                    <h4 class="mt-3 mb-3">Galerie</h4>
+                    <div class="grid-items">
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-1.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-2.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-3.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-4.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-5.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-6.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-7.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-8.png" alt="mustafaa" />
+                        </div>
+                        <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
+                            <img class="g-col-4" src="assets/imgs/gallery/gallery-9.png" alt="mustafaa" />
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__social-icon mt-30">
+                    <h6 class="text-secondary">Suivez moi:</h6>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Offcanvas menu -->
+
+    </header>
+
+
+    <main class="overflow-hidden">
+        
+        <!--home 3 Section4-->
+        <section class="home3_section2 section-padding bg-secondary-1">
+            <div class="container wow img-custom-anim-top">
+                <div class="row">
+                    <div class="col text-center">
+                        <span class="text-uppercase text-primary border border-primary-1 bg-white rounded-3 fs-7 py-1 px-2 fw-medium">Domaines</span>
+                        <h1 class="ds-5">Mes centres d'intérêt</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt-5 pb-5">
+                        <div class="experti p-5 bg-white rounded-4 hover-up position-relative z-1 shadow">
+                            <a href="#">
+                                <img src="assets/imgs/icon/icon-7.png" alt="mustafaa" />
+                                <h1 class=" position-relative z-1">Cybersécurité</h1>
+                                <p class="text-secondary">Étant donné qu'aucun système n'est totalement sécurisé, mon engagement dans ce domaine contribuerait significativement à une utilisation plus sereine des technologies de l'information et de la communication pour tous les utilisateurs.</p>
+                                <span class="stroke_light_xl position-absolute top-0 end-0 lh-1 z-0">01</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 pb-5">
+                        <div class="experti p-5 bg-white rounded-4 hover-up position-relative z-1 shadow">
+                            <a href="#">
+                                <img src="assets/imgs/icon/icon-8.png" alt="mustafaa" />
+                                <h1 class=" position-relative z-1">Intelligence artificielle</h1>
+                                <p class="text-secondary">L'intelligence artificielle m'attire car elle ouvre des perspectives infinies pour résoudre des problèmes complexes et améliorer la prise de décision.</p>
+                                <span class="stroke_light_xl position-absolute top-0 end-0 lh-1 z-0">02</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5 pb-5">
+                        <div class="experti p-5 bg-white rounded-4 hover-up position-relative z-1 shadow">
+                            <a href="#">
+                                <img src="assets/imgs/icon/icon-9.png" alt="mustafaa" />
+                                <h1 class=" position-relative z-1">Développement</h1>
+                                <p class="text-secondary">En me spécialisant dans le développement, je souhaite contribuer à la transformation numérique en créant des solutions innovantes à travers des outils performants et intuitifs, facilitant la vie quotidienne des utilisateurs.</p>
+
+                                <span class="stroke_light_xl position-absolute top-0 end-0 lh-1 z-0">03</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--home 3 Section3-->
+        <section class="home3_section3 section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 wow img-custom-anim-top pt-1">
+                        <span class="text-uppercase text-primary border border-primary-1 bg-white rounded-3 fs-7 py-1 px-2 fw-medium">Parcours Académique</span>
+                        <h1 class="ds-5 pe-8">Études et Compétences</h1>
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h6>Français</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="vertical-line" style="left: 90%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 90%">90%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h6>Wolof</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="vertical-line" style="left: 90%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 90%">90%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h6>Anglais</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 80%"></div>
+                                <div class="vertical-line" style="left: 80%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 80%">80%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-3">
+                                <h6>Python</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="vertical-line" style="left: 70%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 70%">70%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-3">
+                                <h6>Administration SGBD MySQL</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="vertical-line" style="left: 70%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 70%">70%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h6>Développement Web</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="vertical-line" style="left: 70%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 70%">70%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-5">
+                            <div class="mb-3">
+                                <h6>Administration Système Linux</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                                <div class="vertical-line" style="left: 70%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 70%">69%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-3">
+                                <h6>Services Réseaux</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                                <div class="vertical-line" style="left: 50%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 50%">65%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-3">
+                                <h6>Leadership</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="vertical-line" style="left: 85%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 85%">85%</span>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="mb-3">
+                                <h6>Écoute active</h6>
+                            </div>
+                            <div class="progress position-relative" role="progressbar" aria-label="Example 4px high" style="height: 4px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="vertical-line" style="left: 85%"></div>
+                                <span class="progress-number fw-bold text-primary" style="left: 85%">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ps-lg-10 ps-5">
+                        <p class="border-lg-top border-2 border-primary pt-5 wow img-custom-anim-left">
+                            Voici mon parcours académique, incluant toutes mes formations, ainsi qu'une auto-évaluation de mes skills.
+                        </p>
+                        <!-- <div class="hover-up mb-8">
+                            <a href="get-quote.html" class="fw-bold fs-5 wow img-custom-anim-left">
+                                Let’s Talk!
+                                <i class="fa-solid fa-long-arrow-right text-primary ms-2"></i>
+                            </a>
+                        </div> -->
+                        <div class="ps-10 border-start border-primary-1 position-relative">
+                            <div class="wow img-custom-anim-left">
+                                <span class="text-primary fs-7">(Mai 2024 - Aujourd'hui)</span>
+                                <h3> Master en Ingénierie des Systèmes d’Information et des Données</h3>
+                                <p>
+                                    Université Amadou Mahtar Mbow de Diamniadio
+                                    <!-- <hr> -->
+                                </p>
+
+                                <span class="text-primary fs-7">(Janvier 2021 - Mai 2024)</span>
+                                <h3>Licence en Systèmes Electroniques, Informatiques et de
+                                    Télécommunications</h3>
+                                <p>
+                                    Université Amadou Mahtar Mbow de Diamniadio
+                                    <!-- <hr> -->
+                                </p>
+
+                                <span class="text-primary fs-7">(Mars 2023)</span>
+                                <h3>Certificat Informatique et Internet</h3>
+                                <p>
+                                    Programme ForceN - Université Numérique Cheikh Hamidou Kane & Fondation Mastercard
+                                    <!-- <hr> -->
+                                </p>
+
+                                <span class="text-primary fs-7">(Décembre 2022)</span>
+                                <h3>Introduction to Cybersecurity</h3>
+                                <p>
+                                    Cisco Networking Academy
+                                    <!-- <hr> -->
+                                </p>
+
+                                <span class="text-primary fs-7">(Septembre 2020)</span>
+                                <h3>Baccalauréat Scientifique, Option S2</h3>
+                                <p>
+                                    Collège Cardinal Hyacinthe Thiandoum 
+                                    <!-- <hr> -->
+                                </p>
+                                
+                                <!-- <span class="text-primary fs-7">(Novembre 2021 - Février 2022) - (Avril 2024 - Aujourd'hui)</span>
+                                <h2>Président Club Humanitaire</h2>
+                                <p>
+                                    Université Amadou Mahtar Mbow de Diamniadio
+                                    <hr>
+                                </p> -->
+                            </div>
+                            <div class="position-absolute d-flex flex-column top-50 start-0 translate-middle">
+                                <div class="icon-shape icon-xxl rounded-circle border-primary border mb-9 bg-white wow img-custom-anim-left">
+                                    <img src="assets/imgs/icon/education.png" alt="mustafaa" />
+                                </div>
+                                <div class="icon-shape icon-xxl rounded-circle border-primary border mb-9 bg-white wow img-custom-anim-left">
+                                    <img src="assets/imgs/icon/education.png" alt="mustafaa" />
+                                </div>
+                                <div class="icon-shape icon-xxl rounded-circle border-primary border mb-9 bg-white wow img-custom-anim-left">
+                                    <img src="assets/imgs/icon/idea.png" alt="mustafaa" />
+                                    <br>
+                                </div>
+                                <div class="icon-shape icon-xxl rounded-circle border-primary border mb-9 bg-white wow img-custom-anim-left">
+                                    <hr><hr><hr><hr>
+                                    <img src="assets/imgs/icon/idea.png" alt="mustafaa" />
+                                </div>
+                                <div class="icon-shape icon-xxl rounded-circle border-primary border mb-0 bg-white wow img-custom-anim-left">
+                                    <img src="assets/imgs/icon/education.png" alt="mustafaa" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="position-relative bg-white icon_160 icon-shape rounded-circle shadow">
+                        <img class="position-relative" src="assets/imgs/icon/MNLogo.svg" alt="mustafaa" />
+                        <!-- <div class="position-absolute top-50 start-50 translate-middle w-75">
+                            <img class="ribbonRotate dark-reverse" src="assets/imgs/icon/badge-text.png" alt="mustafaa" />
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--home 3 Section4-->
+        <section class="home3_section4 section-padding bg-secondary-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center pt-120 wow img-custom-anim-top">
+                        <span class="text-uppercase text-primary border border-primary-1 bg-white rounded-3 fs-7 py-1 px-2 fw-medium">Portfolio</span>
+                        <!-- <h1 class="ds-5">Expérience professionnelle</h1> -->
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative">
+                <!-- Carausel Scroll -->
+                <div id="carouselTicker-left" class="carouselTicker position-relative z-1 wow img-custom-anim-right">
+                    <ul class="carouselTicker__list">
+                        <li class="carouselTicker__item">
+                            
+                                <img class="rounded-4" src="assets/imgs/background/chuhuman.png" alt="mustafaa" />
+                            
+                        </li>
+                        <li class="carouselTicker__item">
+                            
+                                <img class="rounded-4" src="assets/imgs/background/connectic.png" alt="mustafaa" />
+                            
+                        </li>
+                        <li class="carouselTicker__item">
+                        
+                                <img class="rounded-4" src="assets/imgs/background/img-portfolio-3-3.png" alt="mustafaa" />
+                            
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="home2_section6 pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-center text-center wow img-custom-anim-top">
+                    <div class="position-relative icon_150 bg-transparent rounded-circle">
+                        <img class="position-relative z-1" src="assets/imgs/icon/badge-icon-1.png" alt="mustafaa" />
+                        <div class="position-absolute top-50 start-50 translate-middle w-100">
+                            <img class="ribbonRotate dark-reverse" src="assets/imgs/icon/badge-1.png" alt="mustafaa" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-16 mx-auto text-center position-relative">
+                        <h1 class="stroke_center wow img-custom-anim-top">Distinctions</h1>
+                        <div class="overlay_light mt-10 position-absolute top-50 start-50 translate-middle z-0">
+                            <img class="wow img-custom-anim-top" src="assets/imgs/background/Backgroundmn2.png" alt="mustafaa" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-relative z-1 wow img-custom-anim-top pt-3">
+                    <div class="col">
+                        <a href="parcoursxp.html"><img class="hover-up" src="assets/imgs/background/certif-forceN.png" alt="mustafaa" /></a>
+                    </div>
+                    <div class="col">
+                        <a href="parcoursxp.html"><img class="hover-up" src="assets/imgs/background/Decoration-clubhumanitaire.png" alt="mustafaa" /></a>
+                    </div>
+                    <div class="col">
+                        <a href="parcoursxp.html"><img class="hover-up" src="assets/imgs/background/certif-netacad.png" alt="mustafaa" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--home 3 Section7-->
+        <section class="section-padding bg-secondary-1 border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pe-lg-10 wow img-custom-anim-left pt-1">
+                        <span class="text-uppercase text-primary border border-primary-1 bg-white rounded-3 fs-7 py-1 px-2 fw-medium">FAQ</span>
+                        <h1 class="ds-5 mb-8">
+                            Obtenez quelques <br />
+                            réponses
+                        </h1>
+                        <div id="accordion">
+                            <div class="card mb-4 p-3 border-0 bg-gradient-1 rounded-4">
+                                <div class="card-header border-0 bg-gradient-1">
+                                    <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseOne"> "Quel est le but de votre portfolio?" </a>
+                                </div>
+                                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        En créant ce portfolio, je simplifie la recherche d'informations à quiconque voulant se renseigner sur mes réalisations et mon parcours.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 p-3 border-0 bg-gradient-1 rounded-4">
+                                <div class="card-header border-0 bg-gradient-1">
+                                    <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseTwo"> "Votre portfolio est-il à jour?" </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Je m'efforce de le mettre à jour dès que j'en ai l'occasion.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 p-3 border-0 bg-gradient-1 rounded-4">
+                                <div class="card-header border-0 bg-gradient-1">
+                                    <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseThree"> "Etes-vous plus à l'aise en solo ou en équipe?"</a>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Je m'adapte assez aisément aux différentes situations qui se posent. Cependant, je privilégie toujours le travail collaboratif.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-lg-end text-center wow img-custom-anim-right">
+                        <div class="d-inline-flex ps-5 position-relative">
+                            <div class="zoom-img rounded-4">
+                                <img src="assets/imgs/background/code.jpg" alt="mustafaa" />
+                            </div>
+                            <div class="position-absolute bottom-0 start-0 ms-5 translate-middle-x mb-5 bg-white icon_115 icon-shape rounded-circle shadow">
+                                <img class="position-relative" src="assets/imgs/icon/MNLogo.svg" alt="mustafaa" />
+                                <div class="position-absolute top-50 start-50 translate-middle w-75">
+                                    <!-- <img class="ribbonRotate dark-reverse" src="assets/imgs/icon/badge-text-1.png" alt="mustafaa" /> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+    </main>
+   
+    <!-- Footer -->
+    <footer>
+        <div class="footer-home1 bg-black bg-dark-black pt-120 positon-relative overflow-hidden">
+            <div class="container pb-120">
+                <div class="row">
+                    <div class="col-lg-3 mb-5 mb-lg-0 wow img-custom-anim-left">
+                        <img src="assets/imgs/logo/MNLogo-footer.svg" alt="logo" />
+                        <p class="mt-5">
+                            Ceci est consititue une brève présentation de l'ensemble de mon travail, ainsi que des projets dans lesquels j'ai eu à intervenir. Je reste ouvert à toute opportunité et serai ravi de travailler avec vous. 
+                        </p>
+                        <div class="d-flex gap-4">
+                            <a href="https://twitter.com/" class="text-reset">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="text-reset">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" class="text-reset">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 offset-lg-2 wow img-custom-anim-top">
+                        <div class="row">
+                            <div class="col-md-5 ps-5 ps-md-3">
+                                <h4 class="text-white mb-5">Discutons!</h4>
+                                <a href="tel:+12345678900" class="d-flex align-items-start mb-3 text-secondary">
+                                    <i class="bi bi-telephone-fill text-white me-3"></i>+221 77 886 02 93
+                                </a>
+                                <a href="mailto:moustaphand1502@gmail.com" class="d-flex align-items-start mb-3 text-secondary">
+                                    <i class="bi bi-envelope-open-fill me-3 text-white"></i>moustaphand1502@gmail.com
+                                </a>
+                                <!-- <a href="https://www.google.com/maps" class="d-flex align-items-start mb-3 text-secondary">
+                                    <i class="bi bi-geo-alt-fill me-3 text-white"></i>12/A, New Booston Tower,<br />NYC, USA
+                                </a> -->
+                            </div>
+                            <div class="col-md-5 ps-5 col-7 ps-md-8">
+                                <h4 class="text-white mb-5">Raccourcis</h4>
+                                <ul class="list-unstyled">
+                                    <li class=" mb-3">
+                                        <a class="text-secondary" href="index.html"> Accueil </a>
+                                    </li>
+                                    <li class=" mb-3">
+                                        <a class="text-secondary" href="parcoursxp.html"> Parcours </a>
+                                    </li>
+                                    <li class=" mb-3">
+                                        <a class="text-secondary" href="projets.html"> Projets </a>
+                                    </li>
+                                    <li class=" mb-3">
+                                        <a class="text-secondary" href="contact.html"> Contact </a>
+                                    </li>
+                                    <li class=" mb-3">
+                                        <a class="text-secondary" href="parcoursxp.html"> FAQ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-md-4 col-6">
+                                <ul class="list-unstyled mt-8">
+                                    <li class="mb-3">
+                                        <a class="text-secondary" href="#"> Careers </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="text-secondary" href="get-quote.html"> Contact </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="text-secondary" href="#"> Refund Policy </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="text-secondary" href="#"> Design System </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col bg-dark py-4 d-flex justify-content-center">
+            <p class=" mb-0">Copyright &nbsp;<a class="fw-bold text-white" href="index.html" target="_blank">&copy;MoustaphaNDIAYE</a>&nbsp;-&nbsp;2024</p>
+        </div>
+    </footer>
+    <!-- Scroll top -->
+    <div class="btn-scroll-top">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+        </svg>
+    </div>
+    <!-- Libs JS -->
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/jquery.appear.js"></script>
+    <script src="assets/js/vendors/jquery.odometer.min.js"></script>
+    <script src="assets/js/vendors/headhesive.min.js"></script>
+    <script src="assets/js/vendors/smart-stick-nav.js"></script>
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendors/gsap.min.js"></script>
+    <script src="assets/js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendors/custom-cursor.js"></script>
+    <script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+    <script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+    <!-- Theme JS -->
+    <script src="assets/js/gsap-custom.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Other scripts -->
+</body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.borderBottom = "none";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.borderBottom = "1px solid var(--tc-theme-primary)";
+            }
+        });
+    }
+</script>
+
+</html>
